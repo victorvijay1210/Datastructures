@@ -6,9 +6,10 @@ public class RotateArray {
 	
 	//*rotate array concept below
 	//*k=k% array.length
+	//*reverse whole array
 	//*reverse first half(0 to k-1)
 	//*reverse second half (k to last index of the array which is array.length-1)
-	//*reverse whole array
+	
 	
 	
 	public static void ReverseArray(int[] ar , int start, int end) {
