@@ -29,12 +29,12 @@ public class MaximumSumOfSubArray {
 
 	public static void main(String[] args) {
 		
-		int[] numbers = {1, 2, 3, -4, 5, 6};
-		
-	    int maximumsum=	findMaxSubArray(numbers);
-		
-     System.out.println("The Maximum Sum of SubArray is"+" : " + maximumsum);
-     
+//		int[] numbers = {1, 2, 3, -4, 5, 6};
+//		
+//	    int maximumsum=	findMaxSubArray(numbers);
+//		
+//     System.out.println("The Maximum Sum of SubArray is"+" : " + maximumsum);
+//     
      // Example 1: Simple case with positive and negative numbers
      int[] inputCase1 = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
      int result1 = findMaxSubArray(inputCase1);

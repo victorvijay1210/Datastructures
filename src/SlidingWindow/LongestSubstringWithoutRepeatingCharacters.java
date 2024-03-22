@@ -8,39 +8,37 @@ public class LongestSubstringWithoutRepeatingCharacters {
 	
 	// distance formula end-start + 1
 	
-	public static int longestSubstring(String s) {
-		
-		int start=0;
-		int end = 0;
-		//s.length() for empty string case
-		int maxlength = Math.min(s.length(), 1);
-		
-		//using hashset to find duplicate
-		Set<Character> seen = new HashSet<>();
-		
-		while(end<s.length()){
+	 public static int longestSubstring(String s) {
 			
-          Character c=  s.charAt(end);          
-          
-        while (seen.contains(c)) {
-        	seen.remove(c);
-        	start++;
-        	}
-          
-        
-        seen.add(c);
-        
-        int windowsize = end - start + 1;
-        
-        maxlength=Math.max(maxlength, windowsize);
-      
-        end++;
-        
+			int start=0;
+			int end = 0;	
+			int maxlength = 0;
+			
+			//using hashset to find duplicate
+			Set<Character> seen = new HashSet<>();
+			
+			while(end<s.length()){
+				
+	          char c=  s.charAt(end);          
+	          
+	        while (seen.contains(c)) {
+	        	seen.remove(c);
+	        	start++;
+	        	}
+	          
+	        
+	        seen.add(c);	        
+	        maxlength=Math.max(maxlength, end - start + 1);
+	      
+	        end++;
+	        
+			}
+			
+			return maxlength;
+			
 		}
 		
-		return maxlength;
-		
-	}
+
 	
 	
 	

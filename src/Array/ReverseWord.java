@@ -10,8 +10,8 @@ public class ReverseWord {
 	   StringBuilder reverse= new StringBuilder();
 	 
 		for(int i=words.length-1;i>=0;i--) {
-			reverse.append(words[i]);
-			reverse.append(" ");
+			reverse=reverse.append(words[i]);
+			reverse=reverse.append(" ");
 			
 		}
 		

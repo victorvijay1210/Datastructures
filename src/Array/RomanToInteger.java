@@ -24,11 +24,11 @@ public class RomanToInteger {
     	    
     	 int value=  romanValues.get(str.charAt(i));
     	 
-    	 if(i<str.length()-1 && romanValues.get(str.charAt(i+1))>value){
-    		 result -=value;
+    	 if(i+1<str.length() && romanValues.get(str.charAt(i+1))>value){
+    		 result = result-value;
     	 }
     	 else {
-    		 result +=value;
+    		 result = result+value;
     	 }
     	   
        }

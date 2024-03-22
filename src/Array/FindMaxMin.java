@@ -14,10 +14,10 @@ public class FindMaxMin {
 		for(int num: numbers) {
 			
 			if(num>maximum) {
-				num=maximum;
+				maximum=num;
 			}
 			else if(num<minimum) {
-				num=minimum;
+              minimum=num;
 			}
 		}
 		
@@ -27,8 +27,11 @@ public class FindMaxMin {
 	
 	public static void main(String[] args) {
 
-		int[] array= {5, 3, 8, 1, 6, 9};
-		System.out.println(Arrays.toString(array));int[] myList2 = {-5, -3, -8, -1, -6, -9};
+		int[] myList1 = {5, 3, 8, 1, 6, 9};
+        int[] result1 = findMaxMin(myList1);
+        System.out.println("Test case 1: MaxMin: " + Arrays.toString(result1)); // prints "[9, 1]
+		
+		int[] myList2 = {-5, -3, -8, -1, -6, -9};
         int[] result2 = findMaxMin(myList2);
         System.out.println("Test case 2: MaxMin: " + Arrays.toString(result2)); // prints "[-1, -9]"
 

@@ -10,15 +10,14 @@ public class FindLongestCommonPrefix {
 			return "";
 		}
 		
-		Arrays.sort(strings);
-		
+	    
 		String fiststring= strings[0];
 		String laststring=strings[strings.length-1];
+		
 		
 		StringBuilder prefix = new StringBuilder();
 		
 		for(int i=0;i<fiststring.length();i++) {
-			
 			if(i<laststring.length()&&fiststring.charAt(i)==laststring.charAt(i)) {
 				prefix.append(fiststring.charAt(i));
 			}
