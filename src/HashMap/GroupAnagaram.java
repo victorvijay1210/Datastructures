@@ -34,7 +34,7 @@ public class GroupAnagaram {
 		
  		}
 		
-		return new ArrayList<List<String>>(maping.values());
+		return new ArrayList<>(maping.values());
 		
 	}
 	

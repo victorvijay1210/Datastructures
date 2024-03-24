@@ -1,6 +1,7 @@
 package HashMap;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class FindFirstNonRepeatingCharacter {
@@ -8,7 +9,7 @@ public class FindFirstNonRepeatingCharacter {
 	
 	public static Character firstNonRepeatingChar(String str) {
 		
-		Map<Character, Integer> map = new HashMap<>();
+		Map<Character, Integer> map = new LinkedHashMap<>();
 		
 		for(int i=0; i<str.length();i++) {
 			
@@ -18,12 +19,20 @@ public class FindFirstNonRepeatingCharacter {
 					
 		}
 		
-		for(int i=0; i<str.length();i++){
-			 char strchr= str.charAt(i);
-			 
-			 if(map.get(strchr)==1) {
-				 return strchr;
-			 }
+//		for(int i=0; i<str.length();i++){
+//			 char strchr= str.charAt(i);
+//			 
+//			 if(map.get(strchr)==1) {
+//				 return strchr;
+//			 }
+//		}
+		
+		for(Map.Entry<Character, Integer> entry :    map.entrySet()) {
+			
+			
+			if(entry.getValue()==1) {
+				return entry.getKey();
+			}
 		}
 		
 		
