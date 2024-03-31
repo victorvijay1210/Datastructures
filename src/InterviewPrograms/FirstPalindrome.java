@@ -10,6 +10,7 @@ public class FirstPalindrome {
 			
 			if(str.equals(revstr)) {
 				return str;
+				
 			}
 			
 		}

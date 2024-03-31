@@ -37,6 +37,7 @@ public class UniqueNumberofOccurance {
 		// TODO Auto-generated method stub
 
 		int [] num = {1,2,2,1,1,3};
+		System.out.println(uniqueOccurance(num));
 		
 	}
 

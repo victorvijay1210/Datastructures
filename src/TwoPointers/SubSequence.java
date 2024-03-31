@@ -37,7 +37,7 @@ public class SubSequence {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
      System.out.println(IsSubsequence("abc", "ahbgdc"));  //true
-     System.out.println(IsSubsequence("axc", "ahbgdc"));  //true
+     System.out.println(IsSubsequence("axc", "ahbgdc"));  //false
      
 	}
 
