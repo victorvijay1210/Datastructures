@@ -13,12 +13,7 @@ public class RansomNote {
 		
 		for(char c : magazine.toCharArray()) {
 			
-			if(map.containsKey(c)) {
-				map.put(c, map.get(c)+1);
-			}
-			else {
-			map.put(c, 1);
-			}
+			map.put(c, map.getOrDefault(c, 0)+1);
 		}
 		
 		

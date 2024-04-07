@@ -3,7 +3,7 @@ package HashMap;
 import java.util.HashMap;
 import java.util.Map;
 
-public class WordPatter {
+public class WordPattern {
 	
 	public static boolean wordPattern (String pattern, String s) {
 		

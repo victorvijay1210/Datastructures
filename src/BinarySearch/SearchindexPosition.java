@@ -46,13 +46,13 @@ public static int searchPosition(int[]nums, int target) {
       System.out.println(searchPosition(nums1, target1));
       
         int[] nums2 = {1,3,5,6};
-		int target2= 2;//outpout 2
+		int target2= 2;//outpout 1
 		
      System.out.println(searchPosition(nums2, target2));
      
 
         int[] nums3 = {1,3,5,6};
-		int target3= 7;//outpout 2
+		int target3= 7;//outpout 4
 		
   System.out.println(searchPosition(nums3, target3));
 

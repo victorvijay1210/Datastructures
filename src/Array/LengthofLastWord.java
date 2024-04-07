@@ -1,5 +1,7 @@
 package Array;
 
+import java.util.Arrays;
+
 public class LengthofLastWord {
 	
 	
@@ -9,7 +11,7 @@ public class LengthofLastWord {
 		str = str.trim();
 		
 	  String[] word=str.split(" ");
-	  
+
 	  if(word.length==0) {
 		  return 0;
 	  }
