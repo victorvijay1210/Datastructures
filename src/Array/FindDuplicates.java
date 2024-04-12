@@ -3,7 +3,8 @@ package Array;
 import java.util.Arrays;
 
 public class FindDuplicates {
-	
+	//TimeComplexity-O(n)
+	//O(1)
 	public static int findDuplicates(int[] num) {
 		
 		if(num.length==0) {

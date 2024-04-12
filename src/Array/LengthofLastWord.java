@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class LengthofLastWord {
 	
-	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
 	
 	public static int lengthOfLastWord(String str) {
 		

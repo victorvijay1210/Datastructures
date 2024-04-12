@@ -7,7 +7,8 @@ import java.util.Set;
 
 public class ContainsDuplicate {
 	
-	
+	//Time Complexity: O(n)
+	//Space Complexity: O(n)
 	public static boolean containsDuplicate(int[] nums , int k) {
 		
 		if(nums == null & nums.length==0) {

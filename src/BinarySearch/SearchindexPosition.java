@@ -3,7 +3,8 @@ package BinarySearch;
 public class SearchindexPosition {
 	
 	
-	
+	//time complexity o(log n)
+	//space complexity o(1)
 public static int searchPosition(int[]nums, int target) {
 		
 		int left =0;

@@ -2,7 +2,8 @@ package Array;
 
 public class LongestString {
 	
-	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
 	public static String findLongestString(String[] strings) {
 		String longeststring = "";
 		

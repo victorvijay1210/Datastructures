@@ -11,6 +11,8 @@ public class RotateArray {
 	//*reverse second half (k to last index of the array which is array.length-1)
 	
 	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
 	
 	public static void ReverseArray(int[] ar , int start, int end) {
 		
@@ -25,6 +27,8 @@ public class RotateArray {
 		
 	}
 	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
 	public static void rotate (int [] array, int k) {
 		
 		k= k % array.length;

@@ -6,7 +6,8 @@ import java.util.Map;
 
 public class FindFirstNonRepeatingCharacter {
 	
-	
+	//Time Complexity: O(n)
+	//Space Complexity: O(n)
 	public static Character firstNonRepeatingChar(String str) {
 		
 		Map<Character, Integer> map = new LinkedHashMap<>();

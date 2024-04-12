@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class FindMaxMin {
 
-	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
 	public static int[] findMaxMin(int [] numbers) {
 		
 		int maximum = numbers[0];

@@ -5,6 +5,8 @@ import java.util.Set;
 
 public class HasUniqueChar {
 	
+	//Time Complexity: O(n)
+		//Space Complexity: O(n)
 	public static Boolean areUniquie(String str) {
 		
 		Set<Character> unique = new HashSet<>();

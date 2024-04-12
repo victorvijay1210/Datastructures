@@ -6,7 +6,8 @@ import java.util.Set;
 
 public class LongestConsecutiveSequence {
 	
-	
+	//Time Complexity: O(n)
+	//Space Complexity: O(n)
 	
 	public static int longestConsecutive(int[] nums) {
 		

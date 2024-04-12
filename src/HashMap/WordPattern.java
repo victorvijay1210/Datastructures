@@ -5,6 +5,8 @@ import java.util.Map;
 
 public class WordPattern {
 	
+	//Time Complexity: O(n)
+	//Space Complexity: O(n)
 	public static boolean wordPattern (String pattern, String s) {
 		
 		String[] word =	s.split(" ");

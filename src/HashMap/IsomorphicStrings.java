@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class IsomorphicStrings {
 	
-	
+	//Space Complexity: O(n)
+	//Time Complexity: O(n)
 	public static boolean areIsomorphic(String s, String t) {
 		
 		

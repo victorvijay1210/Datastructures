@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class RomanToInteger {
 
-	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
   public static int romantoInt(String str) {
 	  
 	  Map<Character,Integer>romanValues= new HashMap<>();

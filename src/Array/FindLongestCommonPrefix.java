@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 public class FindLongestCommonPrefix {
 	
+	//Time Complexity: O(n)
+	//Space Complexity: O(n)
+	
 	public static String findLongestCommonPrifix(String [] strings) {
 		
 		if( strings.length==0) {

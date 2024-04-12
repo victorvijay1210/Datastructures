@@ -8,7 +8,8 @@ import java.util.Map;
 
 public class GroupAnagaram {
 
-	
+	//Time Complexity: O(n * m * log(m))
+	//Space Complexity: O(n * m)
 	public static List<List<String>> groupAnagrams(String[] str){
 		
 		Map<String, List<String>> maping = new HashMap<>();	

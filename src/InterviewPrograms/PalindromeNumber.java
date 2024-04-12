@@ -5,13 +5,26 @@ public class PalindromeNumber {
 	
 	
 	
+	public static int revno(int numb) {
+		
+		int rev=0;
+		
+		while(numb!=0) {
+			
+			int digit = numb%10;
+			rev= rev*10+digit;
+			numb = numb/10;
+		}
+		
+		
+		return rev;
+	}
+	
 	public static boolean isPalindrome(int numb) {
 		
-		   String num=String.valueOf(numb);
-	 StringBuffer rev = new StringBuffer(num).reverse();
-	 Integer revint= Integer.valueOf(rev.toString());
-	
-	 if(numb==revint) {
+	int reversedno=	revno(numb);
+		System.out.println(reversedno);
+	 if(numb==reversedno) {
 		 return true;
 	 }
 		

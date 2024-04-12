@@ -3,7 +3,8 @@ package Array;
 import java.util.Arrays;
 
 public class MaximumSumOfSubArray {
-	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
 	public static int findMaxSubArray(int[] nums) {
 		
 		if(nums.length==0) {

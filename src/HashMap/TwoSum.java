@@ -6,6 +6,8 @@ import java.util.Map;
 
 public class TwoSum {
 	
+	//Time Complexity: O(n)
+	//Space Complexity: O(n)
 	public static int[] twoSum(int[] nums, int target ) {
 		
 		if (nums.length==0 || nums == null) {

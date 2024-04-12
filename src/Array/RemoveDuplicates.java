@@ -5,6 +5,9 @@ import java.util.Arrays;
 public class RemoveDuplicates {
 
 //print unique value & its length
+	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
 	public static int removeDuplicateNumbers(int[] nums) {
 		
 		if(nums.length==0) {

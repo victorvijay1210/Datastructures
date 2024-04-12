@@ -2,6 +2,8 @@ package Array;
 
 public class FindTheIndexOfFirstOccurance {
 	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
 	public static int strStr( String haystack, String needle) {
 		
 		if( needle==null || needle.length()==0) {

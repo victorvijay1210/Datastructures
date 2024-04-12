@@ -6,7 +6,8 @@ import java.util.Map;
 public class RansomNote {
 
 	
-	
+	//Time Complexity: O(m + n)
+	//Space Complexity: O(n)
 	public static boolean canConstruct(String ransomNote, String magazine) {
 		
 		Map<Character, Integer> map = new HashMap<Character, Integer>();

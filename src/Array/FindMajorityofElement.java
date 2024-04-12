@@ -2,7 +2,8 @@ package Array;
 
 public class FindMajorityofElement {
 	
-	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
 	public static int findMajarity(int[] array) {
 		
 		int majority = array[0];

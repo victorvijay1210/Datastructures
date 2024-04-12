@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class IteminCommon {
 	
-	
+	//Time Complexity: O(n + m)
+	//Space Complexity: O(n)
 	public static boolean itemInCommon(int[]array1,int[] array2) {
 		
 		Map<Integer, Boolean> map = new HashMap<>();

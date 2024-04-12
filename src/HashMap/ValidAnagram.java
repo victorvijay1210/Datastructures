@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class ValidAnagram {
 	
-	
+	//Time Complexity: O(n)
+	//Time Complexity: O(n)
 	public static boolean isAnagram(String s, String t) {
 		
 		if(s.length()!=t.length()) {

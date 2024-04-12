@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class RemoveElement {
 
-	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
 	public static int removeelement(int[] numbers, int value) {
 		
 		int i=0;

@@ -8,7 +8,8 @@ import java.util.Set;
 
 public class FindPairs {
 	
-	
+	//Time Complexity: O(m + n)
+	//Space Complexity: O(n)
 	public static List<int[]> findPairs(int[] arr1, int[]arr2, int target){
 		
 		
