@@ -1,6 +1,6 @@
 package MathematicalPrograms;
 
-public class Palindrome {
+public class PrimeNumber {
 	
 	public static boolean isPalindrome(int num) {
 		
