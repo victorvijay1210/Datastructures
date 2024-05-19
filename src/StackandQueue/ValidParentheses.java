@@ -2,6 +2,8 @@ package StackandQueue;
 
 import java.util.*;
 
+//time complexity of this code is O(n)
+//space complexity of this code is O(n)
 public class ValidParentheses {
     
 	

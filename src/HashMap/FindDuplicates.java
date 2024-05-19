@@ -8,6 +8,8 @@ import java.util.Map;
 
 public class FindDuplicates {
 
+	//Time Complexity: O(n)
+		//Space Complexity: O(n)
 	public static List<Integer> duplicates(int[] nums) {
 		
 		

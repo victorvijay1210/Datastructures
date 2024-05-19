@@ -3,7 +3,8 @@ package HashMap;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-
+//Time Complexity: O(n)
+		//Space Complexity: O(n)
 public class RemoveDuplicates {
 
 	public static ArrayList<Integer> removeDuplicate(List<Integer> list){

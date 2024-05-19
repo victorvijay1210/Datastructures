@@ -2,7 +2,8 @@ package InterviewPrograms;
 
 import java.util.HashSet;
 import java.util.Set;
-
+//Time Complexity: O(n)
+	//Space Complexity: O(n)
 public class ContainsDuplicate {
 
 	public static boolean containsDuplicate(int[] nums) {

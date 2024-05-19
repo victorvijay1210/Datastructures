@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class FindtheDifference {
 
-	
+	//time complexity is O(n + m)
+	//space complexity is also O(n + m)
 	public static char findDifference(String s, String t) {
 		
 		Map<Character,Integer> map = new HashMap<>();

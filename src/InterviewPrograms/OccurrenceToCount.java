@@ -2,7 +2,8 @@ package InterviewPrograms;
 
 import java.util.HashMap;
 import java.util.Map;
-
+// space complexity is O(n)
+// time complexity is O(n)
 public class OccurrenceToCount {
     public static String convertToCount(String input) {
         if (input == null || input.isEmpty()) return "";

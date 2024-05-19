@@ -2,7 +2,8 @@ package InterviewPrograms;
 
 public class PrintLowerCase {
 	
-	
+	// time complexity of O(n)
+	// space complexity of O(n)
 	public static String lowerCase(String string) {
 		
 		StringBuffer st = new StringBuffer();

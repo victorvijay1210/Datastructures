@@ -7,7 +7,8 @@ import java.util.Set;
 
 public class IntersectingElements {
 
-	
+	//time complexity is O(n + m)
+	// space complexity is O(n)
 	public static List<Integer> intersectingElements(int[] array1, int[]array2){
 		
 		Set<Integer> set = new HashSet<>();

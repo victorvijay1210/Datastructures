@@ -1,5 +1,7 @@
 package InterviewPrograms;
 
+// time complexity is O(n * m)
+// space complexity is also O(n * m)
 public class FirstPalindrome {
 	
 	public static String firstPalindrome(String[] strarr) {
