@@ -14,7 +14,7 @@ public class ArrayExamples {
 		
          newArray[newArray.length-1]=5;
          
-       //  System.out.println(Arrays.toString(newArray));
+         System.out.println(Arrays.toString(newArray));
          
          
          //sorting array
