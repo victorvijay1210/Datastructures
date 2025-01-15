@@ -24,7 +24,7 @@ public class MergeSortedArray {
 		int j=0;
 		int k=0;
 		
-	     if(isSorted(array1)==false ||isSorted(array2)==false) {
+	     if(isSorted(array1)==false || isSorted(array2)==false) {
 	    	 System.out.println("Given Array is not Sorted");
 	    	 return null;
 	     }
