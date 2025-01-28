@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class MaximumSumOfSubArray {
 	//Time Complexity: O(n)
 	//Space Complexity: O(1)
+	//This is Kadane’s Algorithm to find maximum sum of the subarray
 	public static int findMaxSubArray(int[] nums) {
 		
 		if(nums.length==0) {
