@@ -27,7 +27,7 @@ public class FindTheIndexOfFirstOccurance {
 		// TODO Auto-generated method stub
 		
 		  System.out.println(strStr("sadbutsad", "sad"));    // Output: 0
-	        System.out.println(strStr("leetcode", "leeto"));   // Output: -1
+	        System.out.println(strStr("leetcode", "leeto"));// Output: -1
 
 	}
 

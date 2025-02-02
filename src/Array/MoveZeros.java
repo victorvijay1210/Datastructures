@@ -2,6 +2,10 @@ package Array;
 
 import java.util.Arrays;
 
+
+//Time Complexity: O(n)
+//Space Complexity: O(1)
+
 public class MoveZeros {
 	
 	public static void moveZeroes(int[] nums) {
