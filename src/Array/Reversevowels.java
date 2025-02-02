@@ -32,7 +32,7 @@ public class Reversevowels {
 			}
 			
 			else if(!vowelset.contains(vowelchars[j])) {
-				j++;
+				j--;
 			}
 		}
 		

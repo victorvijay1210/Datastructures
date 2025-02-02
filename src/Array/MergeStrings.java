@@ -9,15 +9,17 @@ public class MergeStrings {
 		int j = 0;
 		
 		while(i<word1.length() && j< word2.length()) {
-			 merged.append(word1.charAt(i++));
-	           merged.append(word2.charAt(j++));
+			 merged.append(word1.charAt(i));
+			 i++;
+	           merged.append(word2.charAt(j));
+	           j++;
 		}
 		// Append remaining characters of word1
         while (i < word1.length()) {
             merged.append(word1.charAt(i++));
         }
         
-        // Append remaining characters of word2
+         //Append remaining characters of word2
         while (j < word2.length()) {
             merged.append(word2.charAt(j++));
         }
