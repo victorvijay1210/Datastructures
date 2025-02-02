@@ -17,7 +17,7 @@ public class ReverseWord {
 		}
 		
 		
-		return reverse.toString();
+		return reverse.toString().trim();
 		
 	}
 	
