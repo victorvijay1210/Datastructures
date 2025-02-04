@@ -55,7 +55,7 @@ public class RotateArray {
 
 	public static void main(String[] args) {
 	
-		 int[] nums1 = {1, 2, 3, 4, 5,6,7};
+		 int[] nums1 = {1, 2, 3, 4, 5,6,7};//Output: [5,6,7,1,2,3,4]
          int k = 3;
          rotate(nums1, k);
          System.out.println("Test case 1: Rotated array: " + Arrays.toString(nums1)); 
