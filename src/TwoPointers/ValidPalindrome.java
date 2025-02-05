@@ -25,12 +25,12 @@ public class ValidPalindrome {
 	}
 	
 	
-	
+
 
 	public static void main(String[] args) {
 		System.out.println(isPalindrome("A man, a plan, a canal: Panama")); // Output: true
         System.out.println(isPalindrome("race a car"));                      // Output: false
-        System.out.println(isPalindrome(" "));
+        System.out.println(isPalindrome(" "));//true
 	}
 
 }
