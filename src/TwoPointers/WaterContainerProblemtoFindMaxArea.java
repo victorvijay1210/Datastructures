@@ -11,6 +11,8 @@ public class WaterContainerProblemtoFindMaxArea {
 	To find height we need to take minimum value **/
 	
 	
+	//Time Complexity: O(n)
+	//Space Complexity: O(1)
 	public static int findMaxArea(int[] heightarray){
 		
 		int leftpointer = 0;
@@ -24,10 +26,11 @@ public class WaterContainerProblemtoFindMaxArea {
 			maxarea=Math.max(maxarea, area);
 			
 			if (heightarray[leftpointer] < heightarray[rightpoint]) {
-				leftpointer++;
+				rightpoint--;
 			}
 			else {
-				rightpoint--;
+				
+				leftpointer++;
 			}
 		}
 

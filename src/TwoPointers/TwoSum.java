@@ -2,6 +2,9 @@ package TwoPointers;
 
 import java.util.Arrays;
 
+//Time Complexity: O(n)
+//Space Complexity: O(1)
+
 public class TwoSum {
 	
 	
