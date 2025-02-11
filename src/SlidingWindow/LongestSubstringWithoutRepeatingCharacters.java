@@ -1,55 +1,52 @@
 package SlidingWindow;
 
 import java.util.HashSet;
+
 import java.util.Set;
 
+
+//Space Complexity: O(n) — due to the HashSet used to store unique characters.
+//Time Complexity: O(n) — because both pointers (start and end) move through the string linearly, and the inner while loop runs efficiently with respect to the start pointer
 public class LongestSubstringWithoutRepeatingCharacters {
-	
-	
-	// distance formula end-start + 1
-	
-	 public static int longestSubstring(String s) {
-			
-			int start=0;
-			int end = 0;	
-			int maxlength = 0;
-			
-			//using hashset to find duplicate
-			Set<Character> seen = new HashSet<>();
-			
-			while(end<s.length()){
-				
-	          char c=  s.charAt(end);          
-	          
-	        while (seen.contains(c)) {
-	        	seen.remove(c);
-	        	start++;
-	        	}
-	          
-	        
-	        seen.add(c);	        
-	        maxlength=Math.max(maxlength, end - start + 1);
-	      
-	        end++;
-	        
-			}
-			
-			return maxlength;
-			
-		}
-		
+    public static int longestSubstring(String s) {
+        int start = 0;
+        int end = 0;    
+        int maxlength = 0;
 
-	
-	
-	
-	
+        // Using a HashSet to store characters we've seen
+        Set<Character> seen = new HashSet<>();
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		System.out.println(longestSubstring("abcabcbb")); //output: 3
-		System.out.println(longestSubstring("bbbbb")); //output: 1
-		System.out.println(longestSubstring("pwwkew")); //output: 3
-	}
+        while (end < s.length()) {
+            char c = s.charAt(end);
 
+            // If the character is already in the set, shrink the window from the start
+            while (seen.contains(c)) {
+                seen.remove(s.charAt(start));
+                start++;
+            }
+
+            // Add the current character to the set
+            seen.add(c);
+
+            // Update the maximum length
+            maxlength = Math.max(maxlength, end - start + 1);
+
+            // Move the end pointer
+            end++;
+        }
+
+        return maxlength;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(longestSubstring("abcabcbb")); // Output: 3
+        System.out.println(longestSubstring("bbbbb")); // Output: 1
+        System.out.println(longestSubstring("pwwkew")); // Output: 3
+    }
 }
+	
+	
+	
+	
+
+	
