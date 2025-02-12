@@ -20,7 +20,7 @@ public class RansomNote {
 		
 		for(char c: ransomNote.toCharArray()) {
 			
-		if(!map.containsKey(c) || map.get(c)==0 )	{
+		if(!map.containsKey(c))	{
 			return false;
 		}
 		  
@@ -36,7 +36,8 @@ public class RansomNote {
 		// TODO Auto-generated method stub
 		   String ransomNote = "aabb";
 	        String magazine = "aaabbc";
-	        System.out.println(canConstruct(ransomNote, magazine)); // Output: true
+	      //  System.out.println(canConstruct(ransomNote, magazine)); // Output: true
+	        System.out.println(canConstruct("aa", "ab")); // Output: true
 	}
 
 }
