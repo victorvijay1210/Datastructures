@@ -2,9 +2,11 @@ package SortingAlgorithm;
 
 import java.util.Arrays;
 
-public class MergeSort {
-	
-	
+
+
+//Time Complexity: O(n log n)//Since we breaking the arrays
+//Space Complexity: O(n)
+public class MergeSort {	
 	//This method works only for sorted arrays
 	public static int[] merge(int[] array1, int[] array2) {
 		
