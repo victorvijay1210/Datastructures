@@ -5,7 +5,7 @@ public class BinarySearch {
 	//Middle formula left+(right-left)/2
 	//time complexity o(log n)
 	//space complexity o(1)
-	
+	//This binary search works formula works only with sorted array
 	public static int binarySearch(int[]nums, int target) {
 		
 		int left =0;
