@@ -13,11 +13,11 @@ public class OddandEvenCount {
 		for(int i=0;i<array.length;i++) {
 			
 			if(array[i]%2==0) {
-				oddcount ++;
+				evencount++;
 	
 			}
 			else {
-				evencount++;
+				oddcount ++;
 			}
 		}
 		

@@ -3,7 +3,7 @@ package TwoPointers;
 public class WaterContainerProblemtoFindMaxArea {
 	
 	/**
-	To find length neeed to subract from higher no to lower no
+	To find length need to subtract from higher no to lower no
 	so j-i
 	
 	To find area the formula is length* height

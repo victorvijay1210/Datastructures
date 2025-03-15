@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class Anagram{ 
 	
-	
+//	Time Complexity: O(n)
+//	Space Complexity: O(n) (due to HashMap storage)
 	public static Boolean isAnagram(String str1,String str2) {
 		
 		if(str1.length()!=str2.length()) {
