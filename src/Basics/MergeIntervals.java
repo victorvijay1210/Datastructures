@@ -11,18 +11,22 @@ public class MergeIntervals {
 
         List<int[]> result = new ArrayList<>();
 
-        // Step 2: Merge intervals
+        int[] newInterval = intervals[0];
+        result.add(newInterval);
+
         for (int[] interval : intervals) {
-            // If result is empty OR no overlap, add the interval
-            if (result.isEmpty() || result.get(result.size() - 1)[1] < interval[0]) {
-                result.add(interval);
-            } else {
-                // Overlapping: merge intervals by updating the end time
-                result.get(result.size() - 1)[1] = Math.max(result.get(result.size() - 1)[1], interval[1]);
-            }
+          if (interval[0] <= newInterval[1])
+            // Overlapping intervals,
+            // update the end if needed
+            newInterval[1] = Math.max(newInterval[1], interval[1]);
+          else {
+            // Disjoint intervals,
+            // add the new interval to the list
+            newInterval = interval;
+            result.add(newInterval);
+          }
         }
 
-        // Step 3: Convert list to 2D array
         return result.toArray(new int[result.size()][]);
     }
 
