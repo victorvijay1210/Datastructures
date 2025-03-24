@@ -6,6 +6,7 @@ import java.util.List;
 
 public class MergeIntervals {
 	
+	//Merge Overlapping Intervals
 	//Time Complexity:O(n log n)
 	//Space Complexity:O(n)
 	public static int[][]mergeIntervals(int[][] intervals){
