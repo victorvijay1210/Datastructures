@@ -34,8 +34,9 @@ public class InsertionSort {
 				int[] array2 = new int[] {5, 2, 9, 1, 6};
 				
 				insertionSort(array1);
-				
+				insertionSort(array2);
 				System.out.println(Arrays.toString(array1));
+				System.out.println(Arrays.toString(array2));
 
 	}
 
