@@ -2,7 +2,7 @@ package Linkedlist;
 
 //https://leetcode.com/problems/reverse-linked-list-ii/description/?envType=study-plan-v2&envId=top-interview-150
 //reverse-linked-list-ii
-public class Solution {
+public class ReverseLinkedListII {
 
 //	Time Complexity: O(n) 
 //	Space Complexity: O(1) 
@@ -47,6 +47,8 @@ public class Solution {
 		
 		
 	}
+	
+	
 
     // Test the function
     public static void main(String[] args) {
@@ -58,7 +60,7 @@ public class Solution {
         head.next.next.next.next = new ListNode(5);
 
         // Call reverseBetween method
-        Solution solution = new Solution();
+        ReverseLinkedListII solution = new ReverseLinkedListII();
         ListNode result = solution.reverseBetween(head, 2, 4);
         
 
