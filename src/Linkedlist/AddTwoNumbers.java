@@ -3,33 +3,35 @@ package Linkedlist;
 public class AddTwoNumbers {
 
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode result = new ListNode(0);
-        ListNode ptr = result;
-        int carry = 0;
 
-        while (l1 != null || l2 != null) {
-            int sum = carry;
+		    ListNode result = new ListNode(0);
+		    ListNode ptr = result;
 
-            if (l1 != null) {
-                sum += l1.val;
-                l1 = l1.next;
-            }
+		    int carry = 0;    // Set default carry
 
-            if (l2 != null) {
-                sum += l2.val;
-                l2 = l2.next;
-            }
+		    while (l1 != null || l2 != null) {
 
-            carry = sum / 10;
-            ptr.next = new ListNode(sum % 10);
-            ptr = ptr.next;
-        }
+		      int sum = 0 + carry;    // Initialize sum
 
-        if (carry > 0) {
-            ptr.next = new ListNode(carry);
-        }
+		      if (l1 != null) {    // Use number from first list
+		        sum += l1.val;
+		        l1 = l1.next;
+		      }
 
-        return result.next;
+		      if (l2 != null) {    // Use number from 2nd list
+		        sum += l2.val;
+		        l2 = l2.next;
+		      }
+
+		      carry = sum / 10;    // Get sum and carry
+		      sum = sum % 10;
+		      ptr.next = new ListNode(sum);
+		      ptr = ptr.next;
+		    }
+
+		    if (carry == 1) ptr.next = new ListNode(1);
+
+		    return result.next;
     }
 
     public static void main(String[] args) {
