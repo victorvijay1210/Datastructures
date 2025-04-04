@@ -2,7 +2,7 @@ package Linkedlist;
 
 public class LinkedListCycle {
 
-	/**
+	
 	  public boolean hasCycle(ListNode head) {
 	        
 	        ListNode slow = head;
@@ -19,5 +19,5 @@ public class LinkedListCycle {
 	        }
 	     return false;
 	    }
-*/
+
 }
