@@ -1,8 +1,9 @@
 package Backtracking;
 
 import java.util.*;
-
-public class PermutationGenerator {
+//https://leetcode.com/problems/permutations/description/?envType=study-plan-v2&envId=top-interview-150
+//https://leetcode.com/problems/permutations-ii/description/
+public class IntegerPermutationGenerator {
 
     public static void swap(int[] nums, int index1, int index2) {
         int temp = nums[index1];	
