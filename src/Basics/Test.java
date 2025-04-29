@@ -1,29 +1,44 @@
 package Basics;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Test {
 
-	public static String intToRoman(int num) {
-        // Define Roman symbols and their corresponding values
-        int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
-        String[] symbols = {
-            "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"
-        };
-        
-        StringBuilder roman = new StringBuilder();
-        
-        for (int i = 0; i < values.length; i++) {
-            while (num >= values[i]) {
-                roman.append(symbols[i]);
-                num -= values[i];
-            }
-        }
-        
-        return roman.toString();
-    }
+	public static int longestSubLength(String s){
 
-    public static void main(String[] args) {
-       // System.out.println(intToRoman(3749)); // Output: MMMDCCXLIX
-        System.out.println(intToRoman(58));   // Output: LVIII
-        //System.out.println(intToRoman(1994)); // Output: MCMXCIV
-    }
+		   if(s.length()==0){
+		     return 0;
+		   }
+		   
+		   Set<Character> seen = new HashSet<>();
+		   
+		   int left =0;
+		   int right=0;
+		   int maxLength=0;
+		   
+		   
+		   while(right<s.length()){
+		      char c= s.charAt(right);
+		      
+		      while(seen.contains(c)){
+		        seen.remove(s.charAt(left));
+		        left++;
+		      }
+		      
+		      seen.add(c);
+		      maxLength=Math.max(maxLength,right-left+1);
+		      right++;
+		   }
+		     return maxLength;
+		   }
+		   
+		  public static void main(String[] args) {
+		      System.out.println(longestSubLength("abcabcbb"));
+		      System.out.println(longestSubLength("bbbbb"));
+		       System.out.println(longestSubLength("pwwkew"));
+		     
+		  }
+		  
+		  
 }
