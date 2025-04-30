@@ -12,7 +12,7 @@ public class MinStack {
 	
 public void push(int num) {
 	stack.push(num);
-	if(minStack.isEmpty()||num<minStack.peek()) {
+	if(minStack.isEmpty()||num<=minStack.peek()) {
 	minStack.push(num)	;
 	}
 }
@@ -22,10 +22,7 @@ public void pop() {
 	if(stack.peek().equals(minStack.peek())) {
 		minStack.pop();
 	}
-	
-	else {
 		stack.pop();
-	}
 }
 
 public int top() {
