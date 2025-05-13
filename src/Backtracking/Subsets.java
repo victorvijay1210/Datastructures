@@ -11,9 +11,10 @@ public class Subsets {
 	
 	public static List<List<Integer>> subsets(int[] nums){
 		
+		List<Integer> temp= new ArrayList<Integer>();
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
 		
-		backtrack(result, new ArrayList<>(),nums , 0);
+		backtrack(result, temp,nums , 0);
 		
 		return result;
 		

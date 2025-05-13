@@ -33,7 +33,7 @@ public class SubsetII {
 		   
 		   tempresult.add(nums[i]);
 		   
-		   backtrack(resulset, tempresult, nums, index+1);
+		   backtrack(resulset, tempresult, nums, i+1);
 		   
 		   tempresult.remove(tempresult.size()-1);
 	   }
