@@ -1,42 +1,47 @@
 package Backtracking;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class IntegerPermutations {
 	
 //	Time Complexity: O(n!)
 //	Space Complexity O(n! * n) if all permutations are stored
 	
-	public static void swap(int[] nums, int index1, int index2) {
-		
-		int temp = nums[index1];	
-		nums[index1]=nums[index2];
-		nums[index2]=temp;
-		
+	public static List<List<Integer>> permute(int[] nums){
+		List<List<Integer>> result = new ArrayList<>();
+		backTrack(result, nums, 0);
+		return result;
 	}
 	
-	public static void solve(int[] nums,int index) {
+	public static void swap(int[] nums , int startIndex, int endIndex) {
+		int temp = nums[startIndex];
+		nums[startIndex]=nums[endIndex];
+		nums[endIndex]=temp;
+	}
+
+	
+	public static void backTrack(List<List<Integer>> resultSet, int[] nums,int index) {
 		
-		if(index==nums.length-1) {//Base condition for recursion 
-			printArray(nums);	
+		if(index==nums.length-1) {
+			
+			List<Integer> permutations = new ArrayList<>();
+			
+			for(int num:nums) {
+				permutations.add(num);
+			}
+			
+			resultSet.add(permutations);
+			
 		}
 		
 		for(int i=index;i<nums.length;i++) {
 			swap(nums, index, i);
-			solve(nums, index+1);
-			swap(nums, index, i);//Backtracking reverting back elements to its original position 
-		}		
-		
+			backTrack(resultSet, nums, index+1);
+			swap(nums, index, i);
+		}
 	}
 	
-	public static void printArray(int[] nums) {//print arrays one by one
-		
-		for(int n:nums) {
-            System.out.print(n + " ");
-
-		}
-		
-		System.out.println("| ");
-	}
-
 	public static void main(String[] args) {
 		
 		int[] nums = new int[] {1,2,3}; // The Permutations and Combination of the given Integer can be calculated
@@ -46,8 +51,8 @@ public class IntegerPermutations {
         	return;
         }
         
-      solve(nums, 0);  
-		
+        System.out.println(permute(nums));
+        
 	}
 
 }
