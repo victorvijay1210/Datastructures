@@ -8,7 +8,7 @@ public class DeleteDuplicates {
 //Time Complexity: O(n)
 //Space Complexity: O(1)
 	public static ListNode deleteDuplicates(ListNode head) {
-
+	    if (head == null || head.next == null) return head;
 		ListNode dummy = new ListNode(0);
 		dummy.next = head;
 
