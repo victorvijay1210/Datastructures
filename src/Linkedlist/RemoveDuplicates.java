@@ -2,7 +2,7 @@ package Linkedlist;
 
 public class RemoveDuplicates {
 	
-	//remove duplicates from linked list
+	//https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 	//time complexity is O(n).
 	//space complexity is O(1)
 	public static ListNode removeDuplicates(ListNode head) {
