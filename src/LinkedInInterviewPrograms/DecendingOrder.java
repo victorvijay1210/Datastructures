@@ -1,4 +1,4 @@
-package LinkedInterviewPrograms;
+package LinkedInInterviewPrograms;
 
 import java.util.Arrays;
 
