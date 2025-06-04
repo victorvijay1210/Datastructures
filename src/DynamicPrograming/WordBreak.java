@@ -31,7 +31,7 @@ public class WordBreak {
 
 			for (int j = i - 1; j >= Math.max(0, i - maxWordLength); j--) {
 
-				if (dp[j] & words.contains(s.substring(j, i))) {
+				if (dp[j] && words.contains(s.substring(j, i))) {
 
 					dp[i] = true;
 					break;
