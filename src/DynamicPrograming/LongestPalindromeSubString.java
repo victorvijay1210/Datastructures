@@ -1,7 +1,7 @@
 package DynamicPrograming;
 
 //https://leetcode.com/problems/longest-palindromic-substring/description/?envType=study-plan-v2&envId=top-interview-150
-public class LongestPalindrome {
+public class LongestPalindromeSubString {
 	
 //	Time Complexity: O(n²)
 //    Space Complexity: O(1)
