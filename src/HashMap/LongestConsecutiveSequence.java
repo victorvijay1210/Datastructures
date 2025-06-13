@@ -18,7 +18,7 @@ public class LongestConsecutiveSequence {
 
 		    int maxlen = 0;
 		    
-		    for (int num : nums) {
+		    for (int num : set) {
 		    	
 		        if (!set.contains(num - 1)) {
 		        	

@@ -5,7 +5,7 @@ public class FindMissingNumber {
 	public static int findMissingNumber(int[] array, int n) {
 	    int sum = n * (n + 1) / 2;
 	    for (int num : array) {
-	        sum -= num; 
+	        sum =sum- num; 
 	    }
 	    return sum;
 	}
