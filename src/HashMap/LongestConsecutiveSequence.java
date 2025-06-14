@@ -3,7 +3,7 @@ package HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-
+//https://leetcode.com/problems/longest-consecutive-sequence/description/?envType=study-plan-v2&envId=top-interview-150
 public class LongestConsecutiveSequence {
 	
 	//Time Complexity: O(n)

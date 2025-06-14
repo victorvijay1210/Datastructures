@@ -3,6 +3,7 @@ package HashMap;
 import java.util.HashMap;
 import java.util.Map;
 
+//https://leetcode.com/problems/isomorphic-strings/description/
 public class IsomorphicStrings {
 	
 	//Space Complexity: O(n)

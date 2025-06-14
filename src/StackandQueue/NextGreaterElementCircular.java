@@ -19,7 +19,7 @@ public class NextGreaterElementCircular {
 		for(int i= 2*n-1;i>=0;i--) {
 			int index = i%n;
 			//following monotonic stack
-			while(!helperStack.isEmpty()&& helperStack.peek()<=nums[index]) {
+			while(!helperStack.isEmpty()&& nums[index]>=helperStack.peek()) {
 				helperStack.pop();
 			}
 			

@@ -3,6 +3,7 @@ package HashMap;
 import java.util.HashMap;
 import java.util.Map;
 
+//https://leetcode.com/problems/word-pattern/description/?envType=study-plan-v2&envId=top-interview-150
 public class WordPattern {
 	
 	//Time Complexity: O(n)

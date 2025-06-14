@@ -20,7 +20,7 @@ public class NextGreaterElement {
 		//A monotonic decreasing stack to efficiently find the next greater element for each number in nums2	
 		for(int num:num2) {
 			
-			while(!stack.isEmpty() && stack.peek()<num) {
+			while(!stack.isEmpty() && num>stack.peek()) {
 				map.put(stack.pop(), num);
 			}
 			
