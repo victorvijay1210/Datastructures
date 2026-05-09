@@ -2,6 +2,9 @@ package Array;
 
 import java.util.Arrays;
 
+
+//https://leetcode.com/problems/longest-common-prefix/description/?envType=study-plan-v2&envId=top-interview-150
+
 public class FindLongestCommonPrefix {
 	
 	//Time Complexity: O(n)

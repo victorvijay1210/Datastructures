@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class MergeSortedArray {
 	
 //Time Complexity: O(m + n)
-//	Space Complexity: O(1)
+//	Space Complexity: O(1)	
+//https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150
 	public static void mergeSortedArray(int []numbers1, int m, int[] numbers2, int n) {
 		
 		int i = m-1;

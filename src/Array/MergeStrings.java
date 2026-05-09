@@ -3,6 +3,7 @@ package Array;
 public class MergeStrings {
 	//time complexity  O(n + m).
 	//space complexity  O(n + m).
+	//https://leetcode.com/problems/merge-strings-alternately/description/
 	public static String mergeStrings(String word1, String word2) {
 		StringBuilder merged = new StringBuilder();
 		int i = 0;

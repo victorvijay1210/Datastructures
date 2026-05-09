@@ -1,7 +1,7 @@
 package Array;
 
 import java.util.Arrays;
-
+//https://leetcode.com/problems/rotate-array/description/?envType=study-plan-v2&envId=top-interview-150
 public class RotateArray {
 	
 	//*rotate array concept below
@@ -33,7 +33,7 @@ public class RotateArray {
 		
 		k= k % array.length;
 		
-		//not mandatory implementaion can we usefull when k is negative
+		//not mandatory implementaion can be usefull when k is negative
 		if(k<0) {
 			k=k+array.length;
 		}
