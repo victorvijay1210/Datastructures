@@ -7,7 +7,7 @@ import java.util.List;
 		//Space Complexity: O(n)
 public class RemoveDuplicates {
 
-	public static ArrayList<Integer> removeDuplicate(List<Integer> list){
+	public static List<Integer> removeDuplicate(List<Integer> list){
 		
 		HashSet<Integer> removeduplicate = new HashSet<Integer>(list);
 		

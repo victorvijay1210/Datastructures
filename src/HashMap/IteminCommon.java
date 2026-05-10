@@ -16,7 +16,11 @@ public class IteminCommon {
 		
 		for(int num1:array2) {
 			
-			if(map.get(num1)!=null) return true;
+			 if (map.containsKey(num1)) {
+
+	                return true;
+
+	            }
 		}
 		
 		
