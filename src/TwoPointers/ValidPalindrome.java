@@ -1,5 +1,6 @@
 package TwoPointers;
 
+//https://leetcode.com/problems/valid-palindrome/description/?envType=study-plan-v2&envId=top-interview-150
 public class ValidPalindrome {
 	
 	public static boolean isPalindrome (String str) {
