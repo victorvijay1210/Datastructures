@@ -6,7 +6,7 @@ public class MinimumSizeSubarray {
 	//minimumlenghth formula : Right-left + 1
 	//Time Complexity: O(n)
 	//Space Complexity: O(1)
-	
+	//https://leetcode.com/problems/minimum-size-subarray-sum/description/?envType=study-plan-v2&envId=top-interview-150
 	
 	public static int minSubArrayLen(int target, int[] array) {
 		
