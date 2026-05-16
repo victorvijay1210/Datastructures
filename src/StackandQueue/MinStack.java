@@ -2,6 +2,7 @@ package StackandQueue;
 
 import java.util.Stack;
 
+ //https://leetcode.com/problems/min-stack/description/?envType=study-plan-v2&envId=top-interview-150
 //Design a stack that supports push, pop, top, and retrieving the minimum element in constant time using getMin()
 //Time Complexity: O(1) for push, pop, top, and getMin.
 //Space Complexity: O(n), where n is the number of elements in the stack.
