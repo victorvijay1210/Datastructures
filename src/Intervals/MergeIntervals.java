@@ -9,6 +9,7 @@ public class MergeIntervals {
 	//Merge Overlapping Intervals
 	//Time Complexity:O(n log n)
 	//Space Complexity:O(n)
+	//https://leetcode.com/problems/merge-intervals/description/?envType=study-plan-v2&envId=top-interview-150
 	public static int[][]mergeIntervals(int[][] intervals){
 		
 		if(intervals.length==1) {

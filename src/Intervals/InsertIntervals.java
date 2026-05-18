@@ -9,6 +9,8 @@ public class InsertIntervals {
 	//Insert Interval
 	//space complexity is O(N)
 	//Time Complexity is O(N)
+	//https://www.youtube.com/watch?v=EbPdy_Tiyio
+	//https://leetcode.com/problems/insert-interval/description/?envType=study-plan-v2&envId=top-interview-150
 	public static int[][] insertInterval(int[][] intervals, int[]newInterval){
 		
 		int current=0;
@@ -54,6 +56,7 @@ public class InsertIntervals {
 		
 		int[][]intervals2 = {{1,2},{3,5},{6,7},{8,10},{12,16}};
 		int[]newInterval2= {4,8};
+		
 		
 		int[][] result1=insertInterval(intervals1, newInterval1);
 		int[][] result2=insertInterval(intervals2, newInterval2);
