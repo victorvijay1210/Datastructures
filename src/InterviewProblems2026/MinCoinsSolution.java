@@ -2,6 +2,10 @@ package InterviewProblems2026;
 
 import java.util.*;
 
+//minimum notes problem
+//Similar to https://leetcode.com/problems/coin-change/description/?utm_source=chatgpt.com
+//Similar to https://www.geeksforgeeks.org/dsa/greedy-algorithm-to-find-minimum-number-of-coins/
+
 public class MinCoinsSolution {
 
     // Method to calculate breakdown of coins
