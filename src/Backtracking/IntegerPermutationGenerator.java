@@ -36,11 +36,11 @@ public class IntegerPermutationGenerator {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,1,2};
-        Set<List<Integer>> permutations = getPermutations(nums);
-
-        for (List<Integer> perm : permutations) {
-            System.out.println(perm);
-        }
+        int[] nums1 = {1,2,3};
+        int[] nums2 = {1,1,2};
+        Set<List<Integer>> permutations1 = getPermutations(nums1);
+        Set<List<Integer>> permutations2 = getPermutations(nums2);
+        System.out.println(permutations1);
+        System.out.println(permutations2);
     }
 }
